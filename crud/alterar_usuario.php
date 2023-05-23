@@ -9,6 +9,7 @@ if ($_POST) {
     $img = '';
     $status = $_POST['txtStatus'];
     $obs = $_POST['txtOBS'];
+    $id = $_POST['txtID'];
 
     try {
         $sql = $conn->prepare("
@@ -17,7 +18,7 @@ if ($_POST) {
                 nascimento_usuario=:nascimento_usuario,
                 usuario_usuario=:usuario_usuario,
                 senha_usuario=:senha_usuario,
-                img_usuario=:img_senha_usuario,
+                img_usuario=:img_usuario,
                 obs_usuario=:obs_usuario,
                 status_usuario=:status_usuario
             where id_usuario=:id_usuario
@@ -28,6 +29,8 @@ if ($_POST) {
                 ':nome_usuario' => $nome,
                 ':nascimento_usuario' => $nasc,
                 ':usuario_usuario' => $login,
+                ':senha_usuario' => $senha,
+                ':img_usuario' => $img,
                 ':obs_usuario' => $obs,
                 ':status_usuario' => $status
             )

@@ -17,59 +17,57 @@
             </div>
         </div>
         <form action="" method="post">
-            <div class="row-mt-3">
-                <div class="col-sm-4">
+            <div class="row mt-3">
+                <div class="col-sm-2">
                     <input type="number" class="form-control" min="0" name="txtID" placeholder="ID do Usuário">
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-2">
                     <button class="btn btn-primary" formaction="pesquisar_usuario.php">&#128269;</button>
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-2">
                     <input type="text" class="form-control" name="txtnome" placeholder="Nome do Usuário">
                 </div>
 
 
-                <div class="col-sm-4">
+                <div class="col-sm-2">
                     <input type="date" class="form-control" name="txtNascimento"
                         placeholder="Data de Nascimento do Usuário">
 
                 </div>
 
 
-                <div class="col-sm-4">
+                <div class="col-sm-2">
                     <input type="text" class="form-control" name="txtlogin" placeholder="login do Usuário">
                 </div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-2">
                     <input type="password" class="form-control" name="txtsenha" placeholder="senha do Usuário">
                 </div>
 
             </div>
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col-sm-8">
                     <input type="file" class="form-control" name="txtImg" id="txtImg" placeholder="Imagem do Usuário">
                 </div>
-                <div>
-                    <div class="col-sm-4">
-                        <div>
-                            <select name="txtStatus" id="txtStatus" class="form-control">
-                                <option value="">--Selecione um Status</option>
-                                <option value="Ativo">Ativo</option>
-                                <option value="Inativo">Inativo</option>
-                            </select>
-                        </div>
+                <div class="col-sm-4">
+                    <div>
+                        <select name="txtStatus" id="txtStatus" class="form-control">
+                            <option value="">--Selecione um Status</option>
+                            <option value="Ativo">Ativo</option>
+                            <option value="Inativo">Inativo</option>
+                        </select>
                     </div>
-                    <div class="row mt-3">
+                </div>
+            </div>
+            <div class="row mt-3">
                         <div class="col-sm-12">
                             <textarea name="txtOBS" id="txtOBS" rows="5" class="form-control"
                                 placeholder="Observação do Usuário"></textarea>
                         </div>
                     </div>
-                </div>
-            </div>
             <div>
-                <div class="row mt -3">
+                <div class="row mt-3">
                     <div class="col-sm-12 text-end">
                         <button name="btocadastrar" id="btocadastrar" class="btn btn-success"
                             formaction="cadastrar_usuario.php">Cadastrar</button>
