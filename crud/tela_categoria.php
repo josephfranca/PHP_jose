@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <?php include_once('pesquisar_categoria.php')?>
     <div class="container mt-3">
         <div class="row">
             <div class="col-sm-12">
@@ -19,21 +20,17 @@
                 <div class="row mt-3">
                     <div class="col-sm-3">
                         <input type="number" name="txtID" id="txtID" class="form-control" min="0"
-                            placeholder="ID da categoria">
+                            placeholder="ID da categoria" value="<?= $id_categoria?>">
                     </div>
                     <div class="col-sm-9">
                         <button id="btnpesquisar" name="btnpesquisar" class="btn btn-primary"
-                            formaction="pesquisar_categoria.php">&#128269;</button>
+                            formaction="tela_categoria.php">&#128269;</button>
                     </div>
                 </div>
-
-
-
-
                 <div class="row mt-3">
                     <div class="col-sm-9">
                         <input type="text" name="txtNome" id="txtNome" class="form-control"
-                            placeholder="Nome da categoria">
+                            placeholder="Nome da categoria" value = "<?=$nome_categoria?>">
                     </div>
 
                     <div class="col-sm-3">
@@ -47,14 +44,14 @@
                 <div class="row mt-3">
                     <div class="col-sm-12">
                         <textarea name="txtdesc" id="txtdesc" rows="3" class="form-control"
-                            placeholder="Descrição"></textarea>
+                            placeholder="Descrição"><?=$desc_categoria?></textarea>
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col-sm-12">
                         <textarea name="txtObs" id="txtObs" rows="5" class="form-control"
-                            placeholder="Observações"></textarea>
+                            placeholder="Observações"> <?=$obs_categoria?></textarea>
                     </div>
                 </div>
 

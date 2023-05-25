@@ -1,6 +1,14 @@
 <?php
 include_once('testeconexao.php');
-
+$IDusuario = '';
+$nomeusuario = '';
+$nascusuario = '';
+//$datacadusuario = '';
+$loginusuario = '';
+$senhausuario = '';
+$imagemusuario = '';
+$obsusuario = '';
+$statususuario = '';
 if ($_POST) {
     $id = $_POST['txtID'];
 
@@ -8,6 +16,23 @@ if ($_POST) {
 
     if ($sql->rowCount() >= 1) {
         foreach ($sql as $row) {
+
+            $IDusuario = $row[0];
+            $nomeusuario = $row[1];
+            $nascusuario = $row[2];
+            //  $datacadusuario = $row[3];
+            $loginusuario = $row[4];
+            $senhausuario = $row[5];
+            $imagemusuario = $row[6];
+            $obsusuario = $row[7];
+            $statususuario = $row[8];
+
+
+
+
+
+
+            /*
             echo "<p>ID: $row[0]</p>";
             echo "<p>Nome: $row[1]</p>";
             echo "<p>Data de Nascimento: $row[2]</p>";
@@ -17,16 +42,9 @@ if ($_POST) {
             echo "<p>Imagem: $row[6]</p>";
             echo "<p>Observação: $row[7]</p>";
             echo "<p>Status: $row[8]</p>";
+            */
         }
-    } 
-    else {
+    } else {
         echo '<p>Usuário não existe, por favor Melhore</p>';
     }
 }
-else
-{
-    header('location:tela_cadastro.php');
-}
-?>
-<hr>
-<a href="tela_cadastro.php">Voltar</a>
