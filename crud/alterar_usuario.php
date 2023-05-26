@@ -44,12 +44,12 @@ if ($_POST) {
 }
     else
     {
-        header('location:tela_cadastro.php');
+        header('location:_sistema.php?tela=usuario');
     }
 ?>    
 
 <hr>
-<a href="tela_cadastro.php">Voltar</a>
+<a href="_sistema.php?tela=usuario">Voltar</a>
 
 
 

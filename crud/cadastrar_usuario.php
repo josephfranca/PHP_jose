@@ -58,9 +58,9 @@ if($_POST)
 }
 else
 {
-    header('Location:tela_cadastro.php');
+    header('Location:_sistema.php?tela=usuario');
 }
 ?>
 
 <hr>
-<a href="tela_cadastro.php">Voltar</a>
+<a href="_sistema.php?tela=usuario">Voltar</a>

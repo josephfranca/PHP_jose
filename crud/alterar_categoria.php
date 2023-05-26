@@ -74,8 +74,8 @@ if ($_POST) {
     
 }
 else{
-    header('location:tela_categoria.php');
+    header('location:_sistema.php?tela=categoria.php');
 }
 ?>
 <hr>
-<a href="tela_categoria.php">Voltar</a>
+<a href="_sistema.php?tela=categoria">Voltar</a>

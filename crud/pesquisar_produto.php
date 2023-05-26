@@ -13,7 +13,7 @@ if($_POST)
             $id_categoria_produto = $row [1];
             $nome_produto  = $row [2];
             $qtde_produto  = $row [3];
-            $
+            
             
     }
 
