@@ -78,4 +78,4 @@ else{
 }
 ?>
 <hr>
-<a href="_sistema.php?tela=categoria">Voltar</a>
+<a href="_sistema.php?tela=categoria ">Voltar</a>

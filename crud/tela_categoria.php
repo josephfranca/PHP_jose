@@ -24,8 +24,8 @@
                 <div class="col-sm-3">
                     <select name="txtStatus" class="form-control" id="txtStatus">
                         <option value="">--Selecione o Status--</option>
-                        <option value="Ativo"<?=($status_categoria == 'Ativo'?'selected':"")?>>Ativo</option>
-                        <option value="Inativo"<?=($status_categoria == 'Inativo'?'selected':"")?>>Inativo</option>
+                        <option value="Ativo" <?= ($status_categoria == 'Ativo' ? 'selected' : "") ?>>Ativo</option>
+                        <option value="Inativo" <?= ($status_categoria == 'Inativo' ? 'selected' : "") ?>>Inativo</option>
                     </select>
                 </div>
             </div>
@@ -49,14 +49,13 @@
                         formaction="cadastrar_categoria.php" value="cadastrar">Cadastrar</button>
                     <button id="btnalterar" name="btnalterar" class="btn btn-secondary"
                         formaction="alterar_categoria.php" value="alterar">Alterar</button>
-                        <a href="_sistema.php?tela=categoria" name="btolimpar" id="btolimpar"
+                    <a href="_sistema.php?tela=categoria" name="btolimpar" id="btolimpar"
                         class="btn btn-primary">Limpar</a>
                     <button id="btnexcluir" name="btnexcluir" class="btn btn-danger" formaction="excluir_categoria.php"
                         value="excluir">Excluir</button>
                     <button id="btnsair" name="btnsair" class="btn btn-dark" formaction="tela_categoria.php"
                         value="sair">Sair</button>
                 </div>
-
             </div>
         </form>
     </div>
