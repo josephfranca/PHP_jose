@@ -13,6 +13,13 @@
 <a href="_sistema.php?tela=historico">
     <div class= "submenu">Histórico</div>
 </a>
-<a href="_sistema.php?tela=sair">
+<a href="login_logoff.php">
     <div class="submenu">Sair</div>
 </a>
+
+<div>
+    <p>ID:<?=$idusuariologin?></p>
+    <p>Nome:<?=$nomeusuario?></p>
+    <p>Login: <?=$loginusuariologin?></p>
+    <p>Imagem: <?=$imgusuariologin?></p>
+</div>

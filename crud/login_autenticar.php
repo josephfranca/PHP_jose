@@ -11,7 +11,7 @@ if ($_SESSION) {
      {
         $idusuariologin = $_SESSION['id_usuario'];
         $nomeusuario = $_SESSION['nome_usuario'];
-        $loginusuariologin = $_SESSION['login_usuario'];
+        $loginusuariologin = $_SESSION['usuario_usuario'];
         $imgusuariologin = $_SESSION['img_usuario'];
     }
     else
